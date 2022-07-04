@@ -1,10 +1,12 @@
 package ru.job4j_spring;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import java.util.Scanner;
 
 @Component
+@Scope("prototype")
 public class ConsoleInput {
 
     private final Scanner scanner = new Scanner(System.in);
